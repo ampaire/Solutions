@@ -1,0 +1,9 @@
+message type,hierarchical location,filename,line number,time,message
+UVM_INFO,uvm_test_top.uart_ctrl_tb0,uart_ctrl_tb.sv,94,0,"[NOCONFIG] No uart_ctrl_config, creating..."
+UVM_INFO,uvm_test_top.uart_ctrl_tb0,uart_ctrl_tb.sv,98,0,[uart_ctrl_tb] Printing cfg: is_active uvm_active_passive_enum 1
+UVM_INFO,uvm_test_top.uart_ctrl_tb0,uart_ctrl_tb.sv,174,0,[uart_ctrl_tb] UART_Controller Testbench Topology:
+UVM_INFO,uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor,uart_monitor.sv,127,0,[uart_tx_monitor] Start Running
+UVM_INFO,uvm_test_top.uart_ctrl_tb0.virtual_sequencer@@u2a_bad_parity_vseq,uart_ctrl_virtual_seq_lib.sv,292,0,[u2a_bad_parity_vseq] UART Controller Virtual Sequencer Executing
+UVM_INFO,uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver,uart_tx_driver.sv,97,0,[uart_tx_driver] Reset Asserted
+UVM_WARNING,uvm_test_top.uart_ctrl_tb0.apb0.bus_collector,apb_collector.sv,139,200,[apb_collector] Transfer collected :
+UVM_INFO,uvm_test_top.uart_ctrl_tb0.apb0.master.sequencer@@u2a_bad_parity_vseq.rd_rx_fifo[read_rx_fifo_then_error_reg_seq],uart_ctrl_seq_lib.sv,297,27080,RX FIFO fill level is currently: 0

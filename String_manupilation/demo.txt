@@ -1,0 +1,27 @@
++UVM_VERBOSITY=MEDIUM
++UVM_TESTNAME=uart_bad_parity_test
++UVM_VERBOSITY=MEDIUM
+with `UVM_NO_DEPRECATED undefined.
+with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+(Specify +UVM_NO_RELNOTES to turn off this notice)
+UVM_INFO @ 0ns: reporter [RNTST] Running test uart_bad_parity_test...
+UVM_INFO ../..//pkg_lib/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/tb/sv/uart_ctrl_tb.sv(94) @ 0ns: uvm_test_top.uart_ctrl_tb0 [NOCONFIG] No uart_ctrl_config, creating...
+UVM_INFO ../..//pkg_lib/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/tb/sv/uart_ctrl_tb.sv(98) @ 0ns: uvm_test_top.uart_ctrl_tb0 [uart_ctrl_tb] Printing cfg: is_active uvm_active_passive_enum 1 
+UVM_PASSIVE
+is_active uvm_active_passive_enum 1 UVM_ACTIVE
+is_tx_active uvm_active_passive_enum 1 UVM_ACTIVE
+is_rx_active uvm_active_passive_enum 1 UVM_PASSIVE
+xcelium> uvm_set "*" "recording_detail" UVM_FULL
+UVM_INFO @ 0ns: uvm_test_top.uart_ctrl_tb0.apb0 [CFGNRD] ::: The following resources have at least one
+write and no reads :::
+UVM_INFO ../..//pkg_lib/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/tb/sv/uart_ctrl_tb.sv(174) @ 0ns: uvm_test_top.uart_ctrl_tb0 [uart_ctrl_tb] UART_Controller Testbench Topology:
+recording_detail uvm_verbosity 32 UVM_FULL
+recording_detail uvm_verbosity 32 UVM_FULL
+endian ... UVM_LITTLE_ENDIAN
+UVM_INFO ../..//pkg_lib/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(127) @ 0ns: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Start Running
+UVM_INFO ../..//pkg_lib/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/sequence_lib/uart_ctrl_virtual_seq_lib.sv(292) @ 0ns: uvm_test_top.uart_ctrl_tb0.virtual_sequencer@@u2a_bad_parity_vseq [u2a_bad_parity_vseq] UART Controller Virtual Sequencer Executing
+UVM_INFO ../..//pkg_lib/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(97) @ 0ns: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Reset Asserted
+UVM_WARNING ../..//pkg_lib/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_collector.sv(139) @ 200ns: uvm_test_top.uart_ctrl_tb0.apb0.bus_collector [apb_collector] Transfer collected :
+VM_ERROR ../..//pkg_lib/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_collector.sv(139) @
+27075ns: uvm_test_top.uart_ctrl_tb0.apb0.bus_collector [apb_collector] Invalid Transfer Collected :
+UVM_INFO ../..//pkg_lib/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/sequence_lib/uart_ctrl_seq_lib.sv(297) @ 27080ns: uvm_test_top.uart_ctrl_tb0.apb0.master.sequencer@@u2a_bad_parity_vseq.rd_rx_fifo[read_rx_fifo_then_error_reg_seq] RX FIFO fill level is currently: 0
