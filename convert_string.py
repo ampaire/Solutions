@@ -10,5 +10,5 @@ my_string1 = "The Quick Blue Bird1234 Flew Over the Fast River"
 my_string2 = "The Quick Blue Bird76521212 Flew Over the Fast River"
 
 
-print (convert_string(my_string1))
-print (convert_string(my_string2))
+convert_string(my_string1)
+convert_string(my_string2)
